@@ -44,6 +44,7 @@ $primary-color: white;
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
+    overflow:auto;
     .group {
       margin-bottom: 40px;
       a {
@@ -102,9 +103,9 @@ $primary-color: white;
 
   .messages {
     background-color: #fafafa;
-    height: calc(100% - 190px);
+    height: calc(100vh - 190px);
     padding: 35px 40px;
-
+    overflow: auto;
     .message {
       padding-bottom: 46px;
       &__upper-info {
@@ -129,8 +130,11 @@ $primary-color: white;
 
   .form {
     height: 90px;
+    width: calc(100vw - 300px);
     background-color: #d2d2d2;
     padding: 20px 40px;
+    position: absolute;
+    bottom: 0px;
     form {
       display: flex;
       .input-box {
