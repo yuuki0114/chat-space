@@ -11,11 +11,7 @@
     = link_to "Edit", edit_group_path(@group)
   .messages
     = render @messages
-    .message
-      .message__upper-info
-        .message__upper-info__talker
-        .message__upper-info__date
-      .message__text
+   
   .form
     = form_for [@group, @message] do |f|
       .input-box
