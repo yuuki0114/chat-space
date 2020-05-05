@@ -54,6 +54,7 @@ $('#new_message').on('submit', function(e){
  })
   .done(function(data){
     let html = buildHTML(data);
+    console.log(html);
        $('.messages').append(html);
        $('form')[0].reset();
        $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
@@ -87,6 +88,6 @@ $('#new_message').on('submit', function(e){
     })
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-    setInterval(reloadMessages,30000);
+    setInterval(reloadMessages,7000);
   }
 });
