@@ -65,6 +65,7 @@ $primary-color: white;
 
 .chat-main{
   width: calc(100vw - 300px);
+  position: relative;
   .main-header {
     background-color: $primary-color;
     height: 100px;
@@ -107,13 +108,14 @@ $primary-color: white;
     padding: 35px 40px;
     overflow: auto;
     .message {
-      padding-bottom: 46px;
-      &__upper-info {
-        padding-bottom: 12px;
+      padding-bottom: 40px;
+      &__upper {
+        padding-bottom: 10px;
         display: flex;
-        &__talker {
-          color: #333333;
+        &__user-name {
+          color: #434a54;
           font-weight: bold;
+          font-size: 16px;
         }
         &__date  {
           color: #999999;
@@ -124,6 +126,7 @@ $primary-color: white;
       &__text {
         color: #434A54;
         font-size: 14px;
+        margin-bottom: 10px;
       }
     }
   }
