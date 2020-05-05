@@ -4,16 +4,16 @@ $(function(){
    if ( message.image ) {
      let html =
       `<div class="message" data-message-id=${message.id}>
-         <div class="upper-message">
-           <div class="upper-message__user-name">
+         <div class="message__upper">
+           <div class="message__upper__user-name">
              ${message.user_name}
            </div>
-           <div class="upper-message__date">
+           <div class="message__upper__date">
              ${message.created_at}
            </div>
          </div>
-         <div class="lower-message">
-           <p class="lower-message__content">
+         <div class="message__text">
+           <p class="message__text__content">
              ${message.content}
            </p>
          </div>
@@ -23,16 +23,16 @@ $(function(){
    } else {
      let html =
       `<div class="message" data-message-id=${message.id}>
-         <div class="upper-message">
-           <div class="upper-message__user-name">
+         <div class="message__upper">
+           <div class="message__upper__user-name">
              ${message.user_name}
            </div>
-           <div class="upper-message__date">
+           <div class="message__upper__date">
              ${message.created_at}
            </div>
          </div>
-         <div class="lower-message">
-           <p class="lower-message__content">
+         <div class="message__text">
+           <p class="message__text__content">
              ${message.content}
            </p>
          </div>
